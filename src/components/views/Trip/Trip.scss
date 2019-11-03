@@ -1,0 +1,10 @@
+@import '../../../styles/settings.scss';
+
+.flag {
+  width: 100px;
+  max-width: 100px;
+}
+
+.intro {
+  margin: 0 0 ($base-size * 3) 0;
+}

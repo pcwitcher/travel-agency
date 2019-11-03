@@ -1,0 +1,25 @@
+@import '../../../styles/settings.scss';
+
+.options {
+  margin: ($base-size * 8) 0 0;
+}
+
+.option {
+  padding: $base-size ($base-size * 2);
+  margin-bottom: $base-size;
+  border-bottom: 1px solid $color-dark;
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  span {
+    padding-left: ($base-size * 2);
+  }
+}
+
+@media (max-width: 767px) {
+
+  .options {
+    margin: ($base-size * 2) 0 0;
+  }
+
+}

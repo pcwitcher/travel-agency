@@ -1,0 +1,71 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  background: $color-dark;
+  padding: ($base-size * 1.5) 0;
+  color: $color-light;
+
+  nav {
+    font-size: ($base-size * 1.3);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    a {
+      color: $color-light;
+      margin-right: ($base-size * 3);
+      padding-bottom: ($base-size / 2);
+      transition: color 0.4s linear;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &:hover {
+        color: $color-primary;
+      }
+      &:global(.active) {
+        border-bottom: 4px solid $color-primary;
+      }
+    }
+
+  }
+
+}
+
+.logo {
+  color: $color-light;
+  font-size: 24px;
+}
+
+.name {
+  position: relative;
+  top: ($base-size / -4);
+  left: $base-size;
+  font-family: $font-header;
+  text-transform: lowercase;
+  font-size: ($base-size * 1.5);
+}
+
+.contact {
+  text-align: right;
+  span {
+    padding-left: $base-size;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .component  {
+    text-align: center;
+
+    nav {
+      margin-top: ($base-size * 1.5);
+    }
+
+  }
+
+  .contact {
+    text-align: center;
+    margin-top: ($base-size * 1.5);
+  }
+
+}

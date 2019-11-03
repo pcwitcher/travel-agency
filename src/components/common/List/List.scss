@@ -1,0 +1,25 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  > div {
+    padding: $base-size ($base-size * 2);
+    margin-bottom: $base-size;
+  }
+  &.solid {
+    > div {
+      background: $color-dark;
+      color: $color-light;
+    }
+  }
+  &.light {
+    > div {
+      border-bottom: 1px solid $color-dark;
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+  span {
+    padding-left: ($base-size * 2);
+  }
+}

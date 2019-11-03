@@ -1,0 +1,13 @@
+@import '../../../styles/settings.scss';
+
+.name {
+  font-size: ($base-size * 2);
+  margin: ($base-size * 3) 0 0;
+}
+
+.subtitle {
+  color: lighten($color-dark, 40%);
+  font-weight: 400;
+  font-style: italic;
+  margin: $base-size 0 ($base-size * 2) 0;
+}

@@ -1,0 +1,39 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  position: relative;
+  padding: ($base-size * 5) 0;
+  margin-bottom: ($base-size * 3);
+  background: lighten($color-dark, 70%);
+  &.small {
+    height: 200px;
+    margin-bottom: 0;
+    padding: ($base-size * 3) 0;
+  }
+  &.light {
+    background: $color-light;
+  }
+}
+
+.image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .component {
+    &.small {
+      height: auto;
+    }
+  }
+
+}
