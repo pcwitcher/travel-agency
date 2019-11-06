@@ -1,0 +1,14 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  position: relative;
+  margin: ($base-size * 2) 0;
+  @include p-el('before') {
+    content: '';
+    width: ($base-size * 4);
+    height: 4px;
+    top: ($base-size * -1);
+    left: 0;
+    background: $color-dark;
+  }
+}

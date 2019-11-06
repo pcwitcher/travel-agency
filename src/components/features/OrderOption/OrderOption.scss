@@ -1,0 +1,37 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  margin-bottom: ($base-size * 3);
+}
+
+.title {
+  margin-bottom: ($base-size * 2);
+}
+
+.input, .dropdown {
+  width: 80%;
+  border: 1px solid lighten($color-dark, 60%);
+  padding: ($base-size / 2);
+  &Small {
+    width: 30%;
+  }
+}
+
+.icon {
+  cursor: pointer;
+  width: 80%;
+  padding: ($base-size / 2);
+
+  i {
+    padding-right: ($base-size / 2);
+  }
+
+  &Active {
+    background: $color-primary;
+  }
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+}
