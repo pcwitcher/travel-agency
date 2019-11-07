@@ -92,5 +92,20 @@
       "min": 0,
       "max": 6
     }
+  },
+  {
+    "id": "name",
+    "name": "Your name",
+    "type": "text"
+  },
+  {
+    "id": "contact",
+    "name": "Contact info (phone, email, etc.)",
+    "type": "text"
+  },
+  {
+    "id": "start-date",
+    "name": "Preferred trip start",
+    "type": "date"
   }
 ]
