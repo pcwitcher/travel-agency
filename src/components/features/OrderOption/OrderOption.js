@@ -35,7 +35,7 @@ const OrderOption = ({ id, name, type, setOrderOption, ...otherProps }) => {
 };
 
 OrderOption.propTypes = {
-  name: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  type: PropTypes.string,
 };
 export default OrderOption;
