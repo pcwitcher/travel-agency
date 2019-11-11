@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
+    "start": "npm-run-all -p server:*",
+    "server:api": "node server.js",
+    "server:dev": "webpack-dev-server --mode development --open --hot",
     "clean": "rimraf dist",
     "prebuild": "npm run clean",
     "build": "webpack --mode production",
@@ -32,6 +34,7 @@
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
+    "json-server": "^0.15.1",
     "mini-css-extract-plugin": "^0.6.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
@@ -67,6 +70,7 @@
     "jest-resolve": "^24.8.0",
     "jest-watch-typeahead": "^0.3.1",
     "lint-staged": "^8.1.5",
+    "npm-run-all": "^4.1.5",
     "react-test-renderer": "^16.8.6",
     "redux-devtools-extension": "^2.13.8",
     "webpack-dev-server": "^3.3.1"

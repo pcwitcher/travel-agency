@@ -1,7 +1,7 @@
 @import '../../../styles/settings.scss';
 
 .component {
-  background: $color-success;
+  background: $color-dark;
   border: 0;
   color: $color-light;
   text-align: center;
@@ -15,11 +15,12 @@
   transition: $transition;
 
   &:hover {
-    background: darken($color-success, 5%);
+    background: darken($color-dark, 5%);
   }
 
   &.danger {
     background: $color-primary;
+
     &:hover {
       background: darken($color-primary, 5%);
     }
