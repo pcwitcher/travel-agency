@@ -6,9 +6,11 @@
   background: $color-dark;
   margin: 0 0 ($base-size * 5) 0;
   overflow: hidden;
+
   &.small {
     min-height: ($base-size * 25)
   }
+
   @include p-el('before') {
     content: '';
     width: 100%;
@@ -31,7 +33,7 @@
   font-size: ($base-size * 5);
   text-transform: uppercase;
   color: $color-light;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .image {
@@ -41,4 +43,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.happyHour {
+  z-index: 999;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
 }
