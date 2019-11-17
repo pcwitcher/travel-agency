@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './HappyHourAd.scss';
 import PropTypes from 'prop-types';
+import { formatTime } from '../../../utils/formatTime';
 
 class HappyHourAd extends React.Component {
   constructor() {
@@ -43,7 +44,7 @@ class HappyHourAd extends React.Component {
         <h3 className={styles.title}>{this.mockProps.title}</h3>
         <div className={styles.promoDescription}>
           {this.getCountdownTime() <= 82800
-            ? this.getCountdownTime()
+            ? formatTime(this.getCountdownTime())
             : this.mockProps.promoDescription}
         </div>
       </div>
