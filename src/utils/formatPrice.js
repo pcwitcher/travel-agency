@@ -1,5 +1,5 @@
 export const formatPrice = price => {
-  return typeof(price) != 'number'
+  return typeof (price) != 'number'
     ? price
     : Math.ceil(price)
       .toLocaleString('en-US', {
